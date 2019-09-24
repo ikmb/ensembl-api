@@ -1,0 +1,10 @@
+# You can use this file to create a conda environment for this pipeline:
+#   conda env create -f environment.yml
+name: ensembl-api
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - perl-bioperl=1.6.924
+  - htslib=1.9
