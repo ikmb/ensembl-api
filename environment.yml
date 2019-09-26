@@ -6,5 +6,5 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - perl-bioperl=1.6.924
+  - perl-bioperl
   - htslib=1.9
