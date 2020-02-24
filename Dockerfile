@@ -2,7 +2,7 @@ FROM nfcore/base
 LABEL authors="Marc Hoeppner" \
       description="Docker image containing the EnsEMBL PERL Apis"
 
-ARG version=97
+ARG version=99
 
 COPY environment.yml /
 COPY install_api.sh /opt/

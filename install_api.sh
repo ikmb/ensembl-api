@@ -1,11 +1,11 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 
 VERSION=$1
 
 WD=`pwd`
 
 git clone https://github.com/Ensembl/ensembl-git-tools.git
-export PATH=$PWD/ensembl-git-tools/bin:$PATH
+export PATH=$WD/ensembl-git-tools/bin:$PATH
 
 git ensembl --clone api
 
