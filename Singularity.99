@@ -9,7 +9,7 @@ From:nfcore/base
 %environment
     PATH=/opt/conda/envs/ensembl-api/bin:$PATH
     export PATH
-    PERL5LIB /opt/ensembl/97/ensembl/modules:/opt/ensembl/97/ensembl-compara/modules:/opt/ensembl/97/ensembl-variation/modules:/opt/ensembl/97/ensembl-funcgen/modules:$PERL5LIB
+    PERL5LIB /opt/ensembl/99/ensembl/modules:/opt/ensembl/99/ensembl-compara/modules:/opt/ensembl/99/ensembl-variation/modules:/opt/ensembl/99/ensembl-funcgen/modules:$PERL5LIB
     export PERL5LIB
 %files
     environment.yml /
@@ -23,5 +23,5 @@ From:nfcore/base
     apt-get -y install procps
 
 
-    mkdir -p /opt/ensembl/97
-    cd /opt/ensembl/97 && bash /opt/install_api.sh 97
+    mkdir -p /opt/ensembl/99
+    cd /opt/ensembl/99 && bash /opt/install_api.sh 99

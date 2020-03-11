@@ -2,8 +2,11 @@
 
 # EnsEMBL Perl API
 
-Docker container recipe for EnsEMBL API
+Container recipe for EnsEMBL API
 
-The corresponding Docker hub url:
+The corresponding Singularity Hub URL
 
-docker://ikmb/enseml-api:97
+shub://ikmb/ensembl-api:97
+shub://ikmb/ensembl-api:99
+
+
