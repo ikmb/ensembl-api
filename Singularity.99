@@ -9,7 +9,7 @@ From:nfcore/base
 %environment
     PATH=/opt/conda/envs/ensembl-api/bin:$PATH
     export PATH
-    PERL5LIB /opt/ensembl/99/ensembl/modules:/opt/ensembl/99/ensembl-compara/modules:/opt/ensembl/99/ensembl-variation/modules:/opt/ensembl/99/ensembl-funcgen/modules:$PERL5LIB
+    PERL5LIB=/opt/ensembl/99/ensembl/modules:/opt/ensembl/99/ensembl-compara/modules:/opt/ensembl/99/ensembl-variation/modules:/opt/ensembl/99/ensembl-funcgen/modules:$PERL5LIB
     export PERL5LIB
 %files
     environment.yml /
@@ -20,7 +20,7 @@ From:nfcore/base
     /opt/conda/bin/conda clean -a
 
     mkdir -p /ifs
-    apt-get -y install procps
+    apt-get -y install procps libmysqlclient-dev
 
 
     mkdir -p /opt/ensembl/99
