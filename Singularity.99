@@ -20,9 +20,7 @@ From:nfcore/base
     /opt/conda/bin/conda clean -a
 
     mkdir -p /ifs
-    apt-get -y install procps make default-libmysqlclient-dev gcc
- 
-    cpan -i Devel::CheckLib Capture::Tiny  Mock::Config DBI DBD::mysql
-         
+    apt-get -y install procps
+          
     mkdir -p /opt/ensembl/99
     cd /opt/ensembl/99 && bash /opt/install_api.sh 99
