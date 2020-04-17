@@ -20,8 +20,9 @@ From:nfcore/base
     /opt/conda/bin/conda clean -a
 
     mkdir -p /ifs
-    apt-get -y install procps default-libmysqlclient-dev libdbd-mysql-perl libdbi-perl
-
-     
+    apt-get -y install procps default-libmysqlclient-dev
+ 
+    cpan -i DBI DBD::mysql
+         
     mkdir -p /opt/ensembl/99
     cd /opt/ensembl/99 && bash /opt/install_api.sh 99
