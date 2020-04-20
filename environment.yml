@@ -8,5 +8,5 @@ channels:
 dependencies:
   - perl-bioperl
   - htslib=1.9
-  - perl-dbd-mysql
-  - perl-dbi
+  - bioconda::perl-dbd-mysql
+  - bioconda::perl-dbi
