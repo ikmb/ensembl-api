@@ -4,9 +4,6 @@
 
 Container recipe for EnsEMBL API
 
-The corresponding Singularity Hub URL
-
-shub://ikmb/ensembl-api:97
-shub://ikmb/ensembl-api:99
+docker://ikmb/ensembl-api:104
 
 
