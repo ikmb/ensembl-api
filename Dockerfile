@@ -9,7 +9,9 @@ COPY install_api.sh /opt/
 
 RUN conda env create -f /environment.yml && conda clean -a
 ENV PATH="/opt/conda/envs/ensembl-api/bin:$PATH"
-ENV PERL5LIB="/opt/ensembl/$version/ensembl/modules:/opt/ensembl/$version/ensembl-compara/modules:/opt/ensembl/$version/ensembl-variation/modules:/opt/ensembl/$version/ensembl-funcgen/modules:$PERL5LIB"
 
 RUN mkdir -p /opt/ensembl/$version
 RUN cd /opt/ensembl/$version && bash /opt/install_api.sh $version
+
+ENV PERL5LIB="/opt/ensembl/$version/ensembl/modules:/opt/ensembl/$version/ensembl-compara/modules:/opt/ensembl/$version/ensembl-variation/modules:/opt/ensembl/$version/ensembl-funcgen/modules:$PERL5LIB"
+
