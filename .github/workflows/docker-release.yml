@@ -27,5 +27,5 @@ jobs:
         run: |
           echo "$DOCKERHUB_PASS" | docker login -u "$DOCKERHUB_USERNAME" --password-stdin
           docker push ikmb/ensembl-api:latest
-          docker tag ikmb/enseml-api:latest ikmb/ensembl-api:${{ github.event.release.tag_name }}
+          docker tag ikmb/ensembl-api:latest ikmb/ensembl-api:${{ github.event.release.tag_name }}
           docker push ikmb/ensembl-api:${{ github.event.release.tag_name }}
