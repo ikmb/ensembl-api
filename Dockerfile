@@ -7,7 +7,7 @@ ARG version=105
 COPY environment.yml /
 COPY install_api.sh /opt/
 
-RUN apt-get -y install wget unzip
+RUN apt-get -y update && apt-get -y install wget unzip
 RUN conda env create -f /environment.yml && conda clean -a
 
 RUN mkdir -p /opt/ensembl/$version
