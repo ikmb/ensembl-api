@@ -6,7 +6,6 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - perl-bioperl
   - htslib=1.15.1
   - bioconda::perl-dbd-mysql
   - bioconda::perl-dbi
