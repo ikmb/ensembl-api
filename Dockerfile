@@ -16,5 +16,5 @@ RUN cd /opt/ensembl/$version && wget https://github.com/bioperl/bioperl-live/arc
 	&& unzip release-1-6-924.zip && mv bioperl* bioperl-live
 
 ENV PATH="/opt/conda/envs/ensembl-api/bin:$PATH"
-ENV PERL5LIB=$PERL5LIB:/opt/ensembl/$version/ensembl/modules:/opt/ensembl/$version/ensembl-compara/modules:/opt/ensembl/$version/ensembl-variation/modules:/opt/ensembl/$version/ensembl-funcgen/modules:$PERL5LIB:/opt/ensembl/$version/bioperl-live
+ENV PERL5LIB=/opt/ensembl/$version/ensembl/modules:/opt/ensembl/$version/ensembl-compara/modules:/opt/ensembl/$version/ensembl-variation/modules:/opt/ensembl/$version/ensembl-funcgen/modules:$PERL5LIB:/opt/ensembl/$version/bioperl-live
 
